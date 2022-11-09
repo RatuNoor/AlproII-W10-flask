@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2017.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+    <style>
+        body {
+          background-color: whitesmoke;
+        }
+        h1, h2, h3 {
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          color:rgb(241, 206, 241);
+        }
+    </style>
+    <title>Biodata & CV</title>
+</head>
+<body>
+
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1500px;">
+
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+
+        <!--Navigator-->
+        <div class="w3-top" style="background-color: rgb(173, 190, 181);">
+            <div class="w3-bar  w3-padding w3-card">
+                <div class="w3-right w3-hide-small">
+                    <a href="{{ url_for('main')}}" class="w3-bar-item w3-button w3-hover-text-purple" style="font-family: Georgia, 'Times New Roman', Times, serif;">Home</a>
+                    <a href="{{ url_for('akar')}}" class="w3-bar-item w3-button w3-hover-text-purple" style="font-family: Georgia, 'Times New Roman', Times, serif;">Akar Angka</a>
+                    <a href="{{ url_for('data')}}" class="w3-bar-item w3-button w3-hover-text-purple" style="font-family: Georgia, 'Times New Roman', Times, serif;">GET Data</a>
+                    <a href="{{ url_for('form')}}" class="w3-bar-item w3-button w3-hover-text-purple" style="font-family: Georgia, 'Times New Roman', Times, serif;">POST Form</a>
+                  </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    
+      <!-- Left Column -->
+      <div class="w3-third">
+      
+        <div class="w3-white w3-text-grey w3-card-4">
+          <div class="w3-display-container">
+            <img src="{{ url_for('static', filename='ratu.png')}} " style="width:100%" alt="Avatar">
+            <div class="w3-display-bottomleft w3-container w3-text-black">
+              <h2>Ratu Noor Hasannah</h2>
+            </div>
+          </div>
+          <div class="w3-container">
+            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-text-teal"></i>Data Scientist</p>
+            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i> Surabaya, Indonesia</p>
+            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ratunoor003@gmail.com</p>
+            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+62 82299331193</p>
+            <hr>
+  
+            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-purple"></i>Skills</b></p>
+            <p> Graphic Design Platform, Canva</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-2019-sweet-lilac" style="width:80%">--</div>
+            </div>
+            <p> Word Processing Software</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-2019-sweet-lilac" style="width:80%">--</div>
+            </div>
+            <p> Spredsheet Software </p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-2019-sweet-lilac" style="width:80%">--</div>
+            </div>
+            <p> Programming Languages</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-2019-sweet-lilac" style="width:80%">--</div>
+            </div>
+            <br>
+  
+            <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+            <p>Indonesia</p>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge w3-2019-sweet-corn" style="height:24px;width:100%"></div>
+            </div>
+            <p>English</p>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge w3-2019-sweet-corn" style="height:24px;width:55%"></div>
+            </div>
+            
+            <br>
+          </div>
+        </div><br> 
+        <!-- End Left Column -->
+        </div>
+
+        <!-- Right Column -->
+        <div class="w3-twothird">
+        
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16"><i class="w3-margin-right w3-xxlarge w3-text-teal"></i>About Me</h2>
+            <div class="w3-container">
+            <h5 class="w3-opacity"><b>Data Science Student at Universitas Airlangga, Indonesia</b></h5>
+            <p>A curious student. Seeks new experiences and likes to learn lots of new things. Focused and fond of working together. </p>
+            </div>
+        </div>
+
+        <div class="w3-container w3-card w3-white">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+            <div class="w3-container">
+            <h5 class="w3-opacity"><b>Data Science Technology Major, Airlangga University</b></h5>
+            <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021 - Now</h6>
+            <p>Faculty of Advanced Technology and Multidiscipline Airlangga University. Bachelor Degree</p>
+            <hr>
+            </div>
+            <div class="w3-container">
+            <h5 class="w3-opacity"><b>SMA Negri 5 Tambun Selatan</b></h5>
+            <h6 class="w3-text-brown"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2021</h6>
+            <p>High School</p><br>
+            </div>
+        </div>
+        <br>
+
+        <div class="w3-container w3-card w3-white">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experiences</h2>
+            <div class="w3-container">
+            <h5 class="w3-opacity"><b>One of the Mentors in 'Kawan Aksara', a Community Empowerment Project</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2022</h6>
+            <p>Improving the kids' ability and interest to read around Taman Baca WEPOSE by introducing how important literachy, education, books, and reading are, and also teaching them how to read words, simple sentences, and early reading comprehension with creative and interactive based learning.</p>
+            <hr>
+        </div>
+
+        <!-- End Right Column -->
+        </div>
+        
+    <!-- End Grid -->
+    </div>
+    
+    <!-- End Page Container -->
+    </div>
+
+    <footer class="w3-container w3-center w3-margin-top" style="background-color: rgb(173, 190, 181);;">
+    <p>Find me on social media.</p>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+    </body>
+    </html>

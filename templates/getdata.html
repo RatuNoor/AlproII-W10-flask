@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2017.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+    <style>
+        body {
+          background-color: whitesmoke;
+        }
+        h1, h2, h3 {
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          color:rgb(156, 113, 156);
+        }
+    </style>
+    <title>GET data csv to json</title>
+</head>
+<body>
+    <!--Navigator-->
+    <div class="w3-top" style="background-color: rgb(173, 190, 181);">
+        <div class="w3-bar  w3-padding w3-card">
+            <div class="w3-right w3-hide-small">
+                <a href="{{ url_for('main')}}" class="w3-bar-item w3-button w3-hover-text-purple" style="font-family: Georgia, 'Times New Roman', Times, serif;">Home</a>
+                <a href="{{ url_for('biodata')}}" class="w3-bar-item w3-button w3-hover-text-purple" style="font-family: Georgia, 'Times New Roman', Times, serif;">Biodata & CV</a>
+                <a href="{{ url_for('akar')}}" class="w3-bar-item w3-button w3-hover-text-purple" style="font-family: Georgia, 'Times New Roman', Times, serif;">Akar Angka</a>
+                <a href="{{ url_for('form')}}" class="w3-bar-item w3-button w3-hover-text-purple" style="font-family: Georgia, 'Times New Roman', Times, serif;">POST Form</a>
+              </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <form action = "http://localhost:5000/convert" method = "POST" enctype="multipart/form-data" >
+      <p>Silahkan masukkan file</p>
+      <input type = "file" name = "file" />
+      <input type = "submit" value="convert"/>
+  </form>
+</body>
+</html>
